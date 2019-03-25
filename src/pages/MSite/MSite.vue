@@ -138,7 +138,8 @@ import ShopList from '../../components/ShopList/ShopList.vue'
 
 export default {
   mounted () {
-    // 创建一个Swiper实例对象，来实现轮播
+    setTimeout(() => {
+      // 创建一个Swiper实例对象，来实现轮播
 
     /* eslint-disable no-new */
     new Swiper('.swiper-container', {
@@ -148,6 +149,7 @@ export default {
         el: '.swiper-pagination'
       }
     })
+    }, 200);
   },
   components: {
     HeaderTop,
