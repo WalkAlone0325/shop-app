@@ -83,8 +83,8 @@ export default {
       // 根据条件计算产生一个结果
       const index = tops.findIndex((top, index) => {
         // scrollY >= 当前top && scrollY < 下一个top
-        scrollY >= top && scrollY < tops[index + 1]
-        return
+        return scrollY >= top && scrollY < tops[index + 1]
+
       })
       // 返回结果
       return index
