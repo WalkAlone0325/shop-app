@@ -10,8 +10,8 @@ import VueLazyLoad from 'vue-lazyload'
 
 // 图片懒加载
 import loading from './common/images/timg.gif'
-// 过滤器（时间的格式）
 
+// 过滤器（时间的格式）
 import './filters'
 // 进行加载mockServer
 import './mock/mockServer'
