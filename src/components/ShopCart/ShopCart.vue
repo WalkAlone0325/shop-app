@@ -154,7 +154,7 @@ export default {
           text-align center
           background #2b343c
           &.highlight
-            background $green
+            background $brown
           .icon-shopping_cart
             line-height 44px
             font-size 24px
@@ -206,7 +206,7 @@ export default {
         &.not-enough
           background #2b333b
         &.enough
-          background #00b43c
+          background $brown
           color #fff
   .ball-container
     .ball
@@ -219,7 +219,7 @@ export default {
         width 16px
         height 16px
         border-radius 50%
-        background $green
+        background $brown
         transition all 0.4s linear
   .shopcart-list
     position absolute

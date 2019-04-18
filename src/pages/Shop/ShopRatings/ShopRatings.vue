@@ -218,7 +218,7 @@ export default {
         color: rgb(77, 85, 93)
         background: rgba(77, 85, 93, 0.2)
         &.active
-          background: $green
+          background: $brown
           color: #fff
         .count
           margin-left: 2px
@@ -231,7 +231,7 @@ export default {
       font-size: 0
       &.on
         .icon-check_circle
-          color: $green
+          color: $brown
       .icon-check_circle
         display: inline-block
         vertical-align: top

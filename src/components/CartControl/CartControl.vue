@@ -6,7 +6,7 @@
     <div class="cart-count" v-if = "food.count">{{food.count}}</div>
     <div class="iconfont icon-add_circle" @click.stop = "updateFoodCount(true)"></div>
   </div>
-</template> 
+</template>
 
 <script>
 export default {
@@ -38,7 +38,7 @@ export default {
     padding 6px
     line-height 24px
     font-size 24px
-    color $green
+    color $brown
     &.move-enter-active, &.move-leave-active
       transition all .3s
     &.move-enter, &.move-leave-to
@@ -58,5 +58,5 @@ export default {
     padding: 6px
     line-height: 24px
     font-size: 24px
-    color $green
+    color $brown
 </style>

@@ -138,7 +138,6 @@ import ShopList from '../../components/ShopList/ShopList.vue'
 
 export default {
   mounted () {
-    setTimeout(() => {
       /* eslint-disable no-new */
     new Swiper('.swiper-container', {
       loop: true, // 可以循环轮播
@@ -147,8 +146,6 @@ export default {
         el: '.swiper-pagination'
       }
     })
-    }, 30);
-
   },
   components: {
     HeaderTop,
@@ -197,7 +194,7 @@ export default {
                 color #666
         .swiper-pagination
           >span.swiper-pagination-bullet-active
-            background #02a774
+            background $brown
     .msite_shop_list
             top-border-1px(#e4e4e4)
             margin-top 10px

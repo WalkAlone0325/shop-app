@@ -4,15 +4,16 @@
     <section class="profile-number">
       <router-link to="/login" class="profile-link">
         <div class="profile_image">
-          <i class="iconfont icon-person"></i>
+          <img class="profile_image_img" src="../../common/images/profile.jpg" alt="" v-if="(userInfo.name || userInfo.phone)">
+          <i class="iconfont icon-person" v-else></i>
         </div>
         <div class="user-info">
-          <p class="user-info-top">登录/注册</p>
+          <p class="user-info-top">{{(userInfo.name || userInfo.phone) || '登录/注册'}}</p>
           <p>
             <span class="user-icon">
               <i class="iconfont icon-shouji icon-mobile"></i>
             </span>
-            <span class="icon-mobile-number">暂无绑定手机号</span>
+            <span class="icon-mobile-number">{{userInfo.phone || '暂无绑定手机号'}}</span>
           </p>
         </div>
         <span class="arrow">
@@ -88,15 +89,38 @@
         </div>
       </a>
     </section>
+
+    <section class="profile_my_order border-1px">
+      <mt-button type="danger" style="width: 100%"  v-if="userInfo.name || userInfo.phone" @click="logout">退出登陆</mt-button>
+    </section>
   </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
+import { MessageBox, Toast } from 'mint-ui'
 import HeaderTop from '../../components/HeaderTop/HeaderTop'
 export default {
+  computed: {
+    ...mapState(['userInfo'])
+  },
   components: {
     HeaderTop
-  }
+  },
+  methods: {
+    logout () {
+      MessageBox.confirm('确认退出登录吗?').then(
+        action => {
+          // 请求退出
+          Toast('退出登录！');
+          this.$router.push('/login');
+        },
+        action => {
+          console.log('点击了取消！');
+        }
+      );
+    }
+  },
 }
 </script>
 
@@ -106,7 +130,7 @@ export default {
     width 100%
     overflow hidden
     .header
-      background-color #02a774
+      background-color $brown
       position fixed
       z-index 100
       left 0
@@ -150,7 +174,7 @@ export default {
         clearFix()
         position relative
         display block
-        background #02a774
+        background $brown
         padding 20px 10px
         .profile_image
           float left
@@ -159,6 +183,10 @@ export default {
           border-radius 50%
           overflow hidden
           vertical-align top
+          .profile_image_img
+            width 62px
+            height 62px
+            border-radius 50%
           .icon-person
             background #e4e4e4
             font-size 62px
@@ -249,13 +277,13 @@ export default {
                   margin-left -10px
                   font-size 30px
                 .icon-order-s
-                  color #02a774
+                  color $brown
                 .icon-jifen
                   color #ff5f3e
                 .icon-vip
                   color #f90
                 .icon-fuwu
-                  color #02a774
+                  color $brown
               .my_order_div
                 width 100%
                 border-bottom 1px solid #f1f1f1

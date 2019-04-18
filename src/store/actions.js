@@ -2,6 +2,9 @@
 通过mutation间接更新state的多个方法的对象
 */
 import {
+  RECEIVE_USER_INFO,
+  RESET_USER_INFO,
+
   RECEIVE_GOODS,
   RECEIVE_RATINGS,
   RECEIVE_INFO,
@@ -16,6 +19,11 @@ import {
 } from '../api'
 
 export default{
+  // 同步记录用户信息
+  recordUser({commit}, userInfo) {
+    commit(RECEIVE_USER_INFO, {userInfo})
+  },
+
   // mock数据
   // 异步获取商家信息
   async getShopInfo ({commit}) {

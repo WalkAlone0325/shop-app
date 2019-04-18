@@ -189,7 +189,7 @@ export default {
         z-index: 10
         margin-top: -1px
         background: #fff
-        color: $green
+        color: $brown
         font-weight: 700
         .text
           border-none()

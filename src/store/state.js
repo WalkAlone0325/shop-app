@@ -7,5 +7,7 @@ export default {
   ratings: [], // 商家评价
   info: {}, // 商家信息
 
-  cartFoods: [] // 购物车中食物的列表
+  cartFoods: [], // 购物车中食物的列表
+
+  userInfo: {}, // 用户信息
 }

@@ -57,9 +57,9 @@ export default {
       flex-direction column
       align-items center
       margin 5px
-      color #999999
+      color #458994
       &.on
-        color #02a774
+        color $header
       span
         font-size 12px
         margin-top 2px

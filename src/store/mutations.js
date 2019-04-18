@@ -3,6 +3,9 @@
 */
 import Vue from 'vue'
 import {
+  RECEIVE_USER_INFO,
+  RESET_USER_INFO,
+
   RECEIVE_INFO,
   RECEIVE_GOODS,
   RECEIVE_RATINGS,
@@ -12,6 +15,16 @@ import {
 } from './mutation-types'
 
 export default{
+
+  [RECEIVE_USER_INFO] (state, {userInfo}) {
+    state.userInfo = userInfo;
+  },
+  [RESET_USER_INFO] (state) {
+    state.userInfo = {};
+  },
+
+
+
   // mock数据
   [RECEIVE_GOODS] (state, {goods}) {
     state.goods = goods
