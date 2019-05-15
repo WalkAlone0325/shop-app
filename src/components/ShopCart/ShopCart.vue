@@ -13,7 +13,7 @@
           <div class="desc">另需配送费￥{{info.deliveryPrice}}元</div>
         </div>
         <div class="content-right">
-          <div class="pay" :class="payClass">
+          <div class="pay" :class="payClass" @click="handleClick">
             {{payText}}
           </div>
         </div>
@@ -45,11 +45,11 @@
 <script>
 import { MessageBox } from 'mint-ui'
 import BScroll from 'better-scroll'
-import {mapState, mapGetters} from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import CartControl from '../CartControl/CartControl.vue'
 
 export default {
-  data () {
+  data() {
     return {
       isShow: false
     }
@@ -59,33 +59,34 @@ export default {
     ...mapState(['cartFoods', 'info']),
     ...mapGetters(['totalCount', 'totalPrice']),
     payClass () {
-      const {totalPrice} = this
-      const {minPrice} = this.info
+      const { totalPrice } = this
+      const { minPrice } = this.info
       return totalPrice >= minPrice ? 'enough' : 'not-enough'
     },
     payText () {
-      const {totalPrice} = this
-      const {minPrice} = this.info
-      if(totalPrice === 0) {
+      const { totalPrice } = this
+      const { minPrice } = this.info
+      if (totalPrice === 0) {
         return `￥${minPrice}元起送`
-      } else if(totalPrice < minPrice) {
+      } else if (totalPrice < minPrice) {
         return `还差￥${minPrice - totalPrice}元起送`
       } else {
         return '结算'
+
       }
     },
 
     // 购物车的列表内容
     listShow () {
       // 如果总数量为0, 不显示
-      if(this.totalCount === 0) {
+      if (this.totalCount === 0) {
         this.isShow = false
         return false
       }
-      if(this.isShow) {
+      if (this.isShow) {
         this.$nextTick(() => {
           // 实现BScroll的实例是一个单例
-          if(!this.scroll) {
+          if (!this.scroll) {
             this.scroll = new BScroll('.list-content', {
               click: true
             })
@@ -99,17 +100,27 @@ export default {
   },
 
   methods: {
-    toggleShow () {
+    handleClick () {
+      if (this.totalPrice >= 20) {
+        MessageBox.confirm('您确定要下单吗?').then(() => {
+          console.log('结算成功！')
+          this.$store.dispatch('clearCart')
+        }, () => {
+        });
+      }
+    },
+    toggleShow() {
       // 只有当总数量大于0时才会  切换
-      if(this.totalCount > 0) {
+      if (this.totalCount > 0) {
         this.isShow = !this.isShow
       }
     },
 
-    clearCart () {
+    clearCart() {
       MessageBox.confirm('确定清空购物车吗?').then(action => {
         this.$store.dispatch('clearCart')
-      }, () => {});
+      }, () => {
+      });
     }
   },
 
@@ -128,13 +139,16 @@ export default {
   z-index 50
   width 100%
   height 48px
+
   .content
     display flex
     background #141d27
     font-size 0
     color rgba(255, 255, 255, 0.4)
+
     .content-left
       flex 1
+
       .logo-wrapper
         display inline-block
         vertical-align top
@@ -147,20 +161,25 @@ export default {
         box-sizing border-box
         border-radius 50%
         background #141d27
+
         .logo
           width 100%
           height 100%
           border-radius 50%
           text-align center
           background #2b343c
+
           &.highlight
             background $brown
+
           .icon-shopping_cart
             line-height 44px
             font-size 24px
             color #80858a
+
             &.highlight
               color #fff
+
         .num
           position absolute
           top 0
@@ -175,6 +194,7 @@ export default {
           color #ffffff
           background rgb(240, 20, 20)
           box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.4)
+
       .price
         display inline-block
         vertical-align top
@@ -185,17 +205,21 @@ export default {
         font-size 16px
         font-weight 700
         color #fff
+
         &.highlight
           color #fff
+
       .desc
         display inline-block
         vertical-align bottom
         margin-bottom 15px
         margin-left -45px
         font-size 10px
+
     .content-right
       flex 0 0 105px
       width 105px
+
       .pay
         height 48px
         line-height 48px
@@ -203,11 +227,14 @@ export default {
         font-size 12px
         font-weight 700
         color #fff
+
         &.not-enough
           background #2b333b
+
         &.enough
           background $brown
           color #fff
+
   .ball-container
     .ball
       position fixed
@@ -215,12 +242,14 @@ export default {
       bottom 22px
       z-index 200
       transition all 0.4s cubic-bezier(0.49, -0.29, 0.75, 0.41)
+
       .inner
         width 16px
         height 16px
         border-radius 50%
         background $brown
         transition all 0.4s linear
+
   .shopcart-list
     position absolute
     left 0
@@ -228,20 +257,25 @@ export default {
     z-index -1
     width 100%
     transform translateY(-100%)
+
     &.move-enter-active, &.move-leave-active
       transition transform .3s
+
     &.move-enter, &.move-leave-to
       transform translateY(0)
+
     .list-header
       height 40px
       line-height 40px
       padding 0 18px
       background #f3f5f7
       border-bottom 1px solid rgba(7, 17, 27, 0.1)
+
       .title
         float left
         font-size 14px
         color rgb(7, 17, 27)
+
       .empty
         float right
         font-size 12px
@@ -252,15 +286,18 @@ export default {
       max-height 217px
       overflow hidden
       background #fff
+
       .food
         position relative
         padding 12px 0
         box-sizing border-box
         bottom-border-1px(rgba(7, 17, 27, 0.1))
+
         .name
           line-height 24px
           font-size 14px
           color rgb(7, 17, 27)
+
         .price
           position absolute
           right 90px
@@ -269,23 +306,27 @@ export default {
           font-size 14px
           font-weight 700
           color rgb(240, 20, 20)
+
         .cartcontrol-wrapper
           position absolute
           right 0
           bottom 6px
+
 .list-mask
-    position fixed
-    top 0
-    left 0
-    width 100%
-    height 100%
-    z-index 40
-    backdrop-filter blur(10px)
-    opacity 1
-    background rgba(7, 17, 27, 0.6)
-    &.fade-enter-active, &.fade-leave-active
-      transition all 0.5s
-    &.fade-enter, &.fade-leave-to
-      opacity 0
-      background rgba(7, 17, 27, 0)
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  z-index 40
+  backdrop-filter blur(10px)
+  opacity 1
+  background rgba(7, 17, 27, 0.6)
+
+  &.fade-enter-active, &.fade-leave-active
+    transition all 0.5s
+
+  &.fade-enter, &.fade-leave-to
+    opacity 0
+    background rgba(7, 17, 27, 0)
 </style>

@@ -15,7 +15,7 @@
           <span class="content-tag">
             <span class="mini-tag">品牌</span>
           </span>
-          <span class="content-name">大鸭梨</span>
+          <span class="content-name">好美味</span>
           <i class="content-icon"></i>
         </h2>
         <div class="shop-message">
@@ -46,7 +46,7 @@
           <span class="content-tag">
             <span class="mini-tag">品牌</span>
           </span>
-          <span class="content-name">嘉禾一品（温都水城）</span>
+          <span class="content-name">菜鸟出品（必为精品）</span>
         </h2>
         <ul class="brief-modal-msg">
           <li>

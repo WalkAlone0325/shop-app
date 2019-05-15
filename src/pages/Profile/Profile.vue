@@ -24,10 +24,6 @@
     <section class="profile_info_data border-1px">
       <ul class="info_data_list">
         <a href="javascript:" class="info_data_link">
-          <span class="info_data_top"><span>0.00</span>元</span>
-          <span class="info_data_bottom">我的余额</span>
-        </a>
-        <a href="javascript:" class="info_data_link">
           <span class="info_data_top"><span>0</span>个</span>
           <span class="info_data_bottom">我的优惠</span>
         </a>
@@ -82,13 +78,17 @@
           <i class="iconfont icon-fuwu"></i>
         </span>
         <div class="my_order_div">
-          <span>服务中心</span>
+          <span>客服中心</span>
           <span class="my_order_icon">
             <i class="iconfont icon-jiantou1"></i>
           </span>
         </div>
       </a>
     </section>
+
+    <div class="profile-a">
+      <a href="javascript:">隐私政策</a>
+    </div>
 
     <section class="profile_my_order border-1px">
       <mt-button type="danger" style="width: 100%"  v-if="userInfo.name || userInfo.phone" @click="logout">退出登陆</mt-button>
@@ -129,6 +129,11 @@ export default {
   .profile //我的
     width 100%
     overflow hidden
+    .profile-a
+      margin-top 20px
+      text-align center
+      >a
+        color: #6c5118
     .header
       background-color $brown
       position fixed
@@ -184,8 +189,8 @@ export default {
           overflow hidden
           vertical-align top
           .profile_image_img
-            width 62px
-            height 62px
+            width 50px
+            height 50px
             border-radius 50%
           .icon-person
             background #e4e4e4
@@ -230,7 +235,7 @@ export default {
         clearFix()
         .info_data_link
           float left
-          width 33%
+          width 49%
           text-align center
           border-right 1px solid #f1f1f1
           .info_data_top

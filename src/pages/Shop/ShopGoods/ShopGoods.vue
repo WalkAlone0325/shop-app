@@ -61,7 +61,7 @@ export default {
     return {
       scrollY: 0, // 右侧滑动的Y坐标
       tops: [], // 所有右侧分类li的top组成的数组
-      food: {}, // 需要显示的food
+      food: {} // 需要显示的food
     }
   },
 
@@ -84,7 +84,6 @@ export default {
       const index = tops.findIndex((top, index) => {
         // scrollY >= 当前top && scrollY < 下一个top
         return scrollY >= top && scrollY < tops[index + 1]
-
       })
       // 返回结果
       return index
@@ -96,6 +95,7 @@ export default {
     // 初始化滚动
     _initScroll () {
       // 列表显示之后创建（better-scroll滚动库）
+      // eslint-disable-next-line no-new
       new BScroll('.menu-wrapper', {
         // click: true // 默认为false，为不可点击，设为true
       })

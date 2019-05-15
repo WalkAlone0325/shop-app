@@ -69,7 +69,7 @@ export default {
     >img
       display block
       width 100%
-      height 30%
+      height 100%
     >h3
       padding 10px 0
       font-size 17px

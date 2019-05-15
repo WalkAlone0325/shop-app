@@ -138,9 +138,10 @@ import ShopList from '../../components/ShopList/ShopList.vue'
 
 export default {
   mounted () {
-      /* eslint-disable no-new */
+    /* eslint-disable no-new */
     new Swiper('.swiper-container', {
       loop: true, // 可以循环轮播
+      autoplay: true,
       // 如果需要分页器
       pagination: {
         el: '.swiper-pagination'

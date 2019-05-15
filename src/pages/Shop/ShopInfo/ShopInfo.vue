@@ -77,7 +77,7 @@ export default {
   mounted () {
     // 在当前路由进行刷新时，会出现info的undefined，所以做如果没有数据直接返回
     // 没有数据直接结束
-    if(!this.info.pics) {
+    if (!this.info.pics) {
       return
     }
     // 创建BScroll对象形成滑动

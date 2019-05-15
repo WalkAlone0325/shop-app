@@ -32,3 +32,5 @@ export const reqShopInfo = () => ajax('/info')
 export const reqShopRatings = () => ajax('/ratings')
 // 获取商家食品信息
 export const reqShopGoods = () => ajax('/goods')
+// 获取商家的列表
+export const reqShopList = () => ajax('/shops')

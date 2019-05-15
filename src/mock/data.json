@@ -1385,5 +1385,570 @@
       "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png",
       "recommend": []
     }
+  ],
+  "shops": [
+    {
+      "name": "朔城区美味小吃",
+      "address": "山西省朔州市",
+      "id": 1,
+      "phone": "13437850035",
+      "category": "快餐便当/简餐",
+      "supports": {
+          "bao": "保",
+          "zhun": "准",
+          "piao": "票"
+      },
+      "recent_order_num": 106,
+      "rating_count": 961,
+      "rating": 4.7,
+      "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥10"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://wwtliu.com/sxtstu/MI/img01/032d0ff1-f77f-4830-a469-f3564d55e0c5.jpg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "2120.1公里",
+      "order_lead_time": "31小时24分钟",
+      "description": "sad",
+      "text": "菜鸟专送"
+    },
+    {
+      "name": "驴肉火烧",
+      "address": "河南省郑州市蜀山区南二环路天鹅湖万达广场8号楼1705室",
+      "id": 479,
+      "phone": "122343adsa",
+      "category": "异国料理",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 755,
+      "rating_count": 167,
+      "rating": 4.2,
+      "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "https://img4.duitang.com/uploads/blog/201307/05/20130705052413_E8wKR.thumb.224_0.jpeg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "1010.3公里",
+      "order_lead_time": "21小时7分钟",
+      "description": "描述性内容1",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a66f45c76d92175ac4464de"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "苏州嘻哈包袱铺",
+      "address": "江苏省苏州市吴中区吴东路中文基广场(姜家桥公交站南)",
+      "id": 485,
+      "latitude": 31.26578,
+      "longitude": 120.65355,
+      "phone": "12345678901",
+      "category": "商店超市/名酒坊",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 58,
+      "rating_count": 576,
+      "rating": 4.6,
+      "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥8"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://wwtliu.com/sxtstu/MI/img01/xmad_15318974928021_cthgC.jpg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "1167.4公里",
+      "order_lead_time": "19小时1分钟",
+      "description": "",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6830b41d632b05464db9d2"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "大树旗舰店2112",
+      "address": "广东省广州市天河区东圃镇汇彩路38号1领汇创展商务中心401",
+      "id": 486,
+      "phone": "13544323775",
+      "category": "快餐便当",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 542,
+      "rating_count": 372,
+      "rating": 4.2,
+      "promotion_info": "大树旗舰店标语",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://cms-bucket.ws.126.net/2019/03/08/cdf92f27b0c54b59a7fa5a43789af2f6.png?imageView&thumbnail=140y88&quality=85",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "2128.8公里",
+      "order_lead_time": "32小时14分钟",
+      "description": "大树旗舰店大树旗舰店大树旗舰店简介",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6863641d632b05464dbaeb"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "广州酒家",
+      "address": "广东省广州市荔湾区上下九商业步行街内",
+      "id": 487,
+      "latitude": 23.11488,
+      "longitude": 113.24826,
+      "location": [
+        113.24826,
+        23.11488
+      ],
+      "phone": "750",
+      "category": "果蔬生鲜/海鲜水产",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 0,
+      "recent_order_num": 923,
+      "rating_count": 871,
+      "rating": 4.2,
+      "promotion_info": "广州第一家",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥4"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://cms-bucket.ws.126.net/2019/03/08/d41c98c5380647d498d7750a252d6d50.png?imageView&thumbnail=140y88&quality=85",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "2123公里",
+      "order_lead_time": "31小时26分钟",
+      "description": "喝早茶好去处",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a687a781d632b05464dbb36"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "闪电老司机",
+      "address": "广东省广州市越秀区德政中路171",
+      "id": 488,
+      "phone": "2",
+      "category": "果蔬生鲜",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 483,
+      "rating_count": 273,
+      "rating": 4.2,
+      "promotion_info": "4",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://cms-bucket.ws.126.net/2019/03/08/4e847fe7b19a4c4491d070019bdb94b5.png?imageView&thumbnail=140y88&quality=85",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "2121.6公里",
+      "order_lead_time": "31小时26分钟",
+      "description": "3",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a687c8d1d632b05464dbb61"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "哈哈",
+      "address": "辽宁省大连市金州区 ",
+      "id": 491,
+      "phone": "12345678",
+      "category": "快餐便当/包子粥店",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 49,
+      "rating_count": 447,
+      "rating": 4.7,
+      "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥3"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://cms-bucket.ws.126.net/2019/03/08/4349ab34f7ad47ca953846d238110412.png?imageView&thumbnail=140y88&quality=85",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "797.7公里",
+      "order_lead_time": "15小时48分钟",
+      "description": "",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a696b071d632b05464dbd32"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "川菜馆111111111",
+      "address": "广东省深圳市宝安区留仙二路59",
+      "id": 496,
+      "phone": "133333",
+      "category": "快餐便当/简餐",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 0,
+      "recent_order_num": 68,
+      "rating_count": 919,
+      "rating": 4.1,
+      "promotion_info": "情侣吃饭，免茶位费",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥0"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://cms-bucket.ws.126.net/2019/03/08/24be838d8be944e18b063b57b914b707.png?imageView&thumbnail=140y88&quality=85",
+      "float_minimum_order_amount": 50,
+      "float_delivery_fee": 5,
+      "distance": "2167.4公里",
+      "order_lead_time": "35小时3分钟",
+      "description": "正宗川菜",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a69880a1d632b05464dbe68"
+        },
+        {
+          "icon_name": "特",
+          "name": "优惠大酬宾",
+          "description": "情侣吃饭，免茶位费",
+          "icon_color": "EDC123",
+          "id": 2,
+          "_id": "5a69880a1d632b05464dbe67"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "广州大学城",
+      "address": "广东省广州市番禺区新造镇小谷围",
+      "id": 510,
+      "phone": "q110",
+      "category": "快餐便当/米粉面馆",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 0,
+      "recent_order_num": 965,
+      "rating_count": 894,
+      "rating": 4.6,
+      "promotion_info": "黄焖鸡米饭",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://img06.tooopen.com/images/20161226/tooopen_sl_193091751452.jpg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "2135.3公里",
+      "order_lead_time": "32小时17分钟",
+      "description": "黄焖鸡ww",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6dbe431d632b05464dccab"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "广州大学城黄焖鸡",
+      "address": "广东省广州市番禺区大学城外环西路230号",
+      "id": 511,
+      "phone": "21107888797",
+      "category": "快餐便当/简餐",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 269,
+      "rating_count": 177,
+      "rating": 4.8,
+      "promotion_info": "好吃的黄焖鸡",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "https://img5.duitang.com/uploads/item/201508/05/20150805205004_QTrJK.thumb.224_0.jpeg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "2136.6公里",
+      "order_lead_time": "32小时21分钟",
+      "description": "黄焖鸡",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6dbe8b1d632b05464dccd4"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "蔡林记",
+      "address": "湖北省武汉市东西湖区 ",
+      "id": 512,
+      "phone": "15527091536",
+      "category": "快餐便当/盖浇饭",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 236,
+      "rating_count": 370,
+      "rating": 4,
+      "promotion_info": "111",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://img3.imgtn.bdimg.com/it/u=3184358760,1828888369&fm=15&gp=0.jpg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "1162.6公里",
+      "order_lead_time": "19小时1分钟",
+      "description": "111",
+      "text": "菜鸟专送",
+      "activities": [],
+      "__v": 0
+    },
+    {
+      "name": "11",
+      "address": "山东省青岛市崂山区第十一中学",
+      "id": 514,
+      "phone": "11111",
+      "category": "快餐便当/简餐",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 0,
+      "recent_order_num": 425,
+      "rating_count": 891,
+      "rating": 4.4,
+      "promotion_info": "111",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "https://img4.duitang.com/uploads/item/201112/16/20111216185354_GQU5R.thumb.224_0.jpg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "645.7公里",
+      "order_lead_time": "11小时2分钟",
+      "description": "111",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6e8ca81d632b05464dcea6"
+        },
+        {
+          "icon_name": "新",
+          "name": "新用户立减",
+          "description": "111",
+          "icon_color": "70bc46",
+          "id": 2,
+          "_id": "5a6e8ca81d632b05464dcea5"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "qqq",
+      "address": "湖北省武汉市黄陂区天河国际机场盘龙城巨龙大道196号",
+      "id": 516,
+      "phone": "11111",
+      "category": "异国料理/披萨意面",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 0,
+      "recent_order_num": 742,
+      "rating_count": 458,
+      "rating": 4.1,
+      "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥12"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "https://b-ssl.duitang.com/uploads/item/201208/20/20120820115338_H2uYv.thumb.224_0.jpeg",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 12,
+      "distance": "1143公里",
+      "order_lead_time": "18小时55分钟",
+      "description": "111",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6e8f561d632b05464dcede"
+        }
+      ],
+      "__v": 0
+    },
+    {
+      "name": "天下食谱",
+      "address": "上海市黄浦区巨鹿路304-1",
+      "id": 518,
+      "phone": "666",
+      "category": "快餐便当/简餐",
+      "supports": {
+        "bao": "保",
+        "zhun": "准",
+        "piao": "票"
+      },
+      "status": 1,
+      "recent_order_num": 867,
+      "rating_count": 916,
+      "rating": 4.7,
+      "promotion_info": "sdafsdf",
+      "piecewise_agent_fee": {
+        "tips": "配送费约¥5"
+      },
+      "is_new": true,
+      "is_premium": true,
+      "image_path": "http://hbimg.b0.upaiyun.com/c09b26c0264b7fd69116ec7e806ef542bc7c7a889888-qpL5gb_fw236",
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5,
+      "distance": "1194.9公里",
+      "order_lead_time": "21小时1分钟",
+      "description": "asdfsda",
+      "text": "菜鸟专送",
+      "activities": [
+        {
+          "icon_name": "减",
+          "name": "满减优惠",
+          "description": "满30减5，满60减8",
+          "icon_color": "f07373",
+          "id": 1,
+          "_id": "5a6e99741d632b05464dcf39"
+        }
+      ],
+      "__v": 0
+    }
   ]
 }
